@@ -210,6 +210,35 @@ Authorization: Bearer YOUR_TOKEN
 
 ---
 
+## 📸 Screenshots
+
+### Login Page
+<img width="939" height="481" alt="login1" src="https://github.com/user-attachments/assets/68652a5b-285e-4d84-8ad0-257dad888838" />
+<img width="939" height="470" alt="login2" src="https://github.com/user-attachments/assets/b8b70793-1adb-499e-8ec4-bfda8147ce25" />
+
+---
+
+### Dashboard
+
+<img width="939" height="474" alt="leads" src="https://github.com/user-attachments/assets/51867f70-98a3-4d96-b1fe-8b2e4725bc1c" />
+<img width="939" height="462" alt="dashboard" src="https://github.com/user-attachments/assets/dce71ddb-4e80-4bad-b0e1-61e182c33165" />
+
+
+---
+
+### Customers
+
+<img width="939" height="468" alt="customers1" src="https://github.com/user-attachments/assets/c4634c3b-abe6-4678-bf4c-d2ac90cb91c7" />
+<img width="939" height="468" alt="customers2" src="https://github.com/user-attachments/assets/01078030-e48e-4b35-bf9a-3010d79a7ea3" />
+
+---
+
+### Leads
+
+<img width="939" height="474" alt="leads" src="https://github.com/user-attachments/assets/0f92fee9-091c-4a18-87e3-3569c93c2bf0" />
+
+---
+
 ## 👩‍💻 Author
 
 **Subhiksha Ram**
