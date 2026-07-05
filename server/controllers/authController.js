@@ -16,8 +16,6 @@ const registerUser = async (req, res) => {
 
     // Check if user already exists
     const existingUser = await User.findOne({ email });
-    console.log("Login email:", email);
-    console.log("User found:", user);
 
     if (existingUser) {
       return res.status(400).json({
@@ -51,7 +49,7 @@ const registerUser = async (req, res) => {
     });
 
   } catch (error) {
-    console.error(error);
+    console.error("Register Error:", error);
 
     res.status(500).json({
       message: "Server Error",
@@ -64,6 +62,11 @@ const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
 
+    console.log("==================================");
+    console.log("LOGIN REQUEST RECEIVED");
+    console.log("Email Entered:", email);
+    console.log("Password Entered:", password);
+
     // Validate
     if (!email || !password) {
       return res.status(400).json({
@@ -71,24 +74,33 @@ const loginUser = async (req, res) => {
       });
     }
 
-    // Check user
+    // Find User
     const user = await User.findOne({ email });
 
+    console.log("User Found:", user);
+
     if (!user) {
+      console.log("No user found with this email.");
+
       return res.status(400).json({
         message: "Invalid Credentials",
       });
     }
 
-    // Compare password
+    // Compare Password
     const isMatch = await bcrypt.compare(password, user.password);
-    console.log("Password match:", isMatch);
+
+    console.log("Password Match:", isMatch);
 
     if (!isMatch) {
+      console.log("Password does not match.");
+
       return res.status(400).json({
         message: "Invalid Credentials",
       });
     }
+
+    console.log("Generating JWT Token...");
 
     // Generate JWT
     const token = jwt.sign(
@@ -102,6 +114,8 @@ const loginUser = async (req, res) => {
       }
     );
 
+    console.log("Login Successful!");
+
     res.status(200).json({
       message: "Login Successful",
       token,
@@ -114,6 +128,8 @@ const loginUser = async (req, res) => {
     });
 
   } catch (error) {
+    console.error("LOGIN ERROR:", error);
+
     res.status(500).json({
       message: error.message,
     });
