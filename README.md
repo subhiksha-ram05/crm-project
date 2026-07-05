@@ -210,34 +210,6 @@ Authorization: Bearer YOUR_TOKEN
 
 ---
 
-## 📸 Screenshots
-
-### Login Page
-
-![Login Page](./screenshots/login1.png)
-
-![Login Page](./screenshots/login2.png)
-
----
-
-### Dashboard
-
-![Dashboard](./screenshots/dashboard.png)
-
----
-
-### Customers
-
-![Customers](./screenshots/customers1.png)
-
-![Customers](./screenshots/customers2.png)
-
----
-
-### Leads
-
-![Leads](./screenshots/leads.png)
-
 ## 👩‍💻 Author
 
 **Subhiksha Ram**
