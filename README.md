@@ -220,7 +220,6 @@ Authorization: Bearer YOUR_TOKEN
 
 ### Dashboard
 
-<img width="939" height="474" alt="leads" src="https://github.com/user-attachments/assets/51867f70-98a3-4d96-b1fe-8b2e4725bc1c" />
 <img width="939" height="462" alt="dashboard" src="https://github.com/user-attachments/assets/dce71ddb-4e80-4bad-b0e1-61e182c33165" />
 
 
