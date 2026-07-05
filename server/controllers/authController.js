@@ -16,6 +16,8 @@ const registerUser = async (req, res) => {
 
     // Check if user already exists
     const existingUser = await User.findOne({ email });
+    console.log("Login email:", email);
+    console.log("User found:", user);
 
     if (existingUser) {
       return res.status(400).json({
@@ -80,6 +82,7 @@ const loginUser = async (req, res) => {
 
     // Compare password
     const isMatch = await bcrypt.compare(password, user.password);
+    console.log("Password match:", isMatch);
 
     if (!isMatch) {
       return res.status(400).json({
